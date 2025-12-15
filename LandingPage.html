@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hospital WiFi Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b8cee",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "surface-dark": "#192633",
+                        "text-secondary": "#92adc9",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2rem",
+                        "2xl": "2.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased selection:bg-primary/30">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden pb-24">
+<!-- Top App Bar -->
+<header class="flex items-center bg-background-light dark:bg-background-dark p-4 justify-between sticky top-0 z-50/90 backdrop-blur-md bg-opacity-90 border-b border-gray-200 dark:border-gray-800">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-[24px]">local_hospital</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-tight">CarePlus Hospital</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-1 rounded-full bg-green-500/10 text-green-600 dark:text-green-400 text-xs font-bold flex items-center gap-1 border border-green-500/20">
+<span class="block w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
+                    WiFi Free
+                 </span>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="p-4">
+<div class="flex flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-2xl items-center justify-center p-8 min-h-[320px] relative overflow-hidden shadow-lg shadow-primary/5" data-alt="Doctor holding hands with patient in a reassuring way, soft medical blue lighting" style='background-image: linear-gradient(to bottom, rgba(16, 25, 34, 0.3) 0%, rgba(16, 25, 34, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCrJJjMdKFgZD71RCV0T_iWzyo2g8zAuEmIk5bYgOvPNGFtPyVBJV2ITa6UK2QYaRtZlNY-MFUPddfrzfkbKo7UZElk9Ze5hDHEj9QtYzP-TVU494KOngWWw6bgD-mTQ2C3Sqm6RuftFeMEMBVyb-2eKJ20PMEp_lcAh5obHeCqO_6RVXH9lbyyDkrZiz7trcDJpAJP_TaD-5I3B44EDacChZ2SuRRLGX-FZjfeeLXFhLoO8JnACb8WksZRilqXSSGZrhAjf4jxEhI");'>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-90"></div>
+<div class="relative z-10 flex flex-col gap-4 text-center items-center max-w-lg">
+<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-2">
+<span class="material-symbols-outlined text-white text-[32px]">medical_services</span>
+</div>
+<h1 class="text-white text-3xl md:text-4xl font-black leading-tight tracking-tight">
+                        Chăm sóc sức khỏe toàn diện<br/><span class="text-primary">Tận tâm từ trái tim</span>
+</h1>
+<p class="text-gray-200 text-sm md:text-base font-medium leading-relaxed max-w-[90%]">
+                        Không ngừng nâng cao chất lượng khám chữa bệnh vì cộng đồng
+                    </p>
+</div>
+</div>
+</section>
+<!-- Upcoming Services -->
+<section class="flex flex-col gap-4 py-4">
+<div class="px-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">new_releases</span>
+<h2 class="text-slate-900 dark:text-white tracking-tight text-xl font-bold leading-tight">Dịch vụ sắp triển khai</h2>
+</div>
+<div class="flex overflow-x-auto pb-4 px-4 gap-4 snap-x snap-mandatory scrollbar-hide -mx-4 px-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:overflow-visible md:px-4">
+<!-- Service Card 1 -->
+<div class="snap-center shrink-0 w-[280px] md:w-auto flex flex-col gap-3 rounded-2xl bg-white dark:bg-surface-dark p-4 shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="w-full aspect-video rounded-xl bg-cover bg-center" data-alt="High tech medical equipment MRI scanner room" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAZrKFYRsj6BbDY2IRSsKaL9gH6ZSTVMTSLcHpJekI27l-FX-lyGpXUoO6lIALQkVajBhHpqW5ePL4ezfZEC9uyHyZxpBMsZxhUkcRnMKqgUO9wI0paH0Wtej5M4Qq1fTBPDfICIXFv-FsrTyAohXK4owwOw_zE9wM9JcCEpeZxbTZhKHmQzcXnMBv9ZabiUNOBa99Oyhga2QjWVmXhy32YB4D0EHYuTklgRSvBBg3WB9b787yJ3TgeuAyLHM0cIVdxgSBdf4jGN2w");'></div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 dark:text-white text-base font-bold">Khám chuyên khoa kỹ thuật cao</h3>
+<p class="text-slate-500 dark:text-text-secondary text-sm">Điều trị với trang thiết bị hiện đại nhất</p>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="snap-center shrink-0 w-[280px] md:w-auto flex flex-col gap-3 rounded-2xl bg-white dark:bg-surface-dark p-4 shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="w-full aspect-video rounded-xl bg-cover bg-center" data-alt="Doctor looking at digital tablet with medical charts" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBYW5DzzS-mVIGaYGk5da9F-dNxU5Q35DLr7Fli5Rul6XUOrK9OPUQrPCbvOPn4BFFJkUSd2NkzkHfBslGgBrnbNIBEIXsv5SV7F_DoqgRCk5fzwaQIVWkPzCrYvt5iwxj1NvPNAIqNPMbpUWMR4Mz9oT8EGj2zVu_OS2R_WI-BRj9W32QBDTAenYpr04th20oMIe4HmjLW4FtTDz2kZTgGLBQFRFcCJocRfc5dw6opAOzgQQagf8u-gdao8VNjvPvkN8dG01C83U4");'></div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 dark:text-white text-base font-bold">Tầm soát ung thư sớm</h3>
+<p class="text-slate-500 dark:text-text-secondary text-sm">Bảo vệ sức khỏe với công nghệ AI</p>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="snap-center shrink-0 w-[280px] md:w-auto flex flex-col gap-3 rounded-2xl bg-white dark:bg-surface-dark p-4 shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="w-full aspect-video rounded-xl bg-cover bg-center" data-alt="Surgeons performing operation in operating theater" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBw0cvO9xmtjdNroye_jq4edL1Jq7AZ_O_RxdXLD6NPTg9ppt4rx5KBQOG_JvrM2RS7e9_jJCCZXr0C-BR_sVjO0pFAYBbu9PxfB96t4FNvLty35f1jKwKt4IUTXMdqjvboptm_k1WYvuteuBS-sP2spenjim4o5Dk5ZXB5sSqgExpJIAaQsyn7N9dmoLc5JBmjJiF23Wr3jChHtuEhDsdlEpu-_O0yDrLeM8jt8klTBlV6sUgUDBgnztuEQ7ROk_yHunEOWKeUYgo");'></div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 dark:text-white text-base font-bold">Phẫu thuật nội soi 3D</h3>
+<p class="text-slate-500 dark:text-text-secondary text-sm">Xâm lấn tối thiểu, hồi phục nhanh</p>
+</div>
+</div>
+<!-- Service Card 4 -->
+<div class="snap-center shrink-0 w-[280px] md:w-auto flex flex-col gap-3 rounded-2xl bg-white dark:bg-surface-dark p-4 shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="w-full aspect-video rounded-xl bg-cover bg-center" data-alt="Nurse visiting elderly patient at home" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTSAnxxD1js6-pdfWK0IFQAqZWq0lxT8vYIfvNp9lCAIceZ_407bLFQO1oLdE-Q2B12lvrv7rCZrTCW3UfeMVx8kVt42ijKwf4uGU8zCg7rIr8K7Rk-OvY06SNjO-Hs9bIIxo-BZtR8xUbgZeGBgbK9ljbUpjSYKlCEE1h5JH5zkZqvUyxRXrOHE38k6SVhbb_M9eGPFlDwDULGaCTH_RYlwuN3JKo2Dh93QyLaWw2x6W6YOLVdrBy0zvZ0EJ8M3QlJOl-y7ZdAco");'></div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 dark:text-white text-base font-bold">Chăm sóc tại nhà</h3>
+<p class="text-slate-500 dark:text-text-secondary text-sm">Dịch vụ y tế tận nơi thuận tiện</p>
+</div>
+</div>
+<!-- Service Card 5 -->
+<div class="snap-center shrink-0 w-[280px] md:w-auto flex flex-col gap-3 rounded-2xl bg-white dark:bg-surface-dark p-4 shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="w-full aspect-video rounded-xl bg-cover bg-center" data-alt="Nutritionist explaining healthy diet plan with fresh vegetables" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtE_xjsgXBWURBNapDSaV68Jet-jrJAAnOyvxrmbmsQyJRyBpiCzpKUYY2OA9Xl2E7BDrWuH_FhZWX-QBbi2jT5fLIy3agomlmoYUbC7_JENoaObnIiuk584_Sh-JSgcTneQX4etz2pnpn4lf-XwKfHrnUl_94S9Pz3VIjuzC6FXvpgh0PYSX6fiYLPbkc3XFMhMTbXTcBz35fsL0W8YLxYS-Y7789P9eXE6drh08xU1TTTeIVin73h1mJ_UIxhxQ0DC7pYV5Xhq4");'></div>
+<div class="flex flex-col gap-1">
+<h3 class="text-slate-900 dark:text-white text-base font-bold">Tư vấn dinh dưỡng</h3>
+<p class="text-slate-500 dark:text-text-secondary text-sm">Cá nhân hóa chế độ ăn uống</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-6 px-4 bg-gray-50 dark:bg-[#15202b]">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-primary">verified</span>
+<h2 class="text-slate-900 dark:text-white tracking-tight text-xl font-bold leading-tight">Vì sao chọn chúng tôi?</h2>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<div class="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-surface-dark shadow-sm">
+<div class="p-2 rounded-full bg-blue-500/10 text-blue-500 shrink-0">
+<span class="material-symbols-outlined">badge</span>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-white font-bold mb-1">Đội ngũ bác sĩ giàu kinh nghiệm</h3>
+<p class="text-sm text-slate-500 dark:text-text-secondary">Các chuyên gia đầu ngành tận tâm với nghề.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-surface-dark shadow-sm">
+<div class="p-2 rounded-full bg-emerald-500/10 text-emerald-500 shrink-0">
+<span class="material-symbols-outlined">ecg_heart</span>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-white font-bold mb-1">Trang thiết bị hiện đại</h3>
+<p class="text-sm text-slate-500 dark:text-text-secondary">Hệ thống máy móc nhập khẩu chuẩn quốc tế.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-surface-dark shadow-sm">
+<div class="p-2 rounded-full bg-purple-500/10 text-purple-500 shrink-0">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-white font-bold mb-1">Hỗ trợ 24/7</h3>
+<p class="text-sm text-slate-500 dark:text-text-secondary">Luôn sẵn sàng khi bạn cần, mọi lúc mọi nơi.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-surface-dark shadow-sm">
+<div class="p-2 rounded-full bg-orange-500/10 text-orange-500 shrink-0">
+<span class="material-symbols-outlined">public</span>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-white font-bold mb-1">Tiêu chuẩn quốc tế</h3>
+<p class="text-sm text-slate-500 dark:text-text-secondary">Quy trình khám chữa bệnh đạt chuẩn JCI.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-white dark:bg-surface-dark shadow-sm">
+<div class="p-2 rounded-full bg-rose-500/10 text-rose-500 shrink-0">
+<span class="material-symbols-outlined">sentiment_satisfied</span>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-white font-bold mb-1">Lấy bệnh nhân làm trung tâm</h3>
+<p class="text-sm text-slate-500 dark:text-text-secondary">Chăm sóc ân cần như người thân trong gia đình.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Technology & Quality -->
+<section class="px-4 py-8">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">science</span>
+<h2 class="text-slate-900 dark:text-white tracking-tight text-xl font-bold leading-tight">Công nghệ &amp; Chất lượng</h2>
+</div>
+<div class="bg-gradient-to-br from-primary/20 to-transparent p-6 rounded-2xl border border-primary/20">
+<p class="text-slate-700 dark:text-gray-300 text-sm leading-relaxed mb-4">
+                        Chúng tôi tự hào áp dụng các công nghệ y khoa tiên tiến nhất hiện nay, từ hệ thống chẩn đoán hình ảnh kỹ thuật số đến phẫu thuật robot chính xác cao.
+                    </p>
+<p class="text-slate-700 dark:text-gray-300 text-sm leading-relaxed">
+                        Mọi quy trình đều được kiểm soát nghiêm ngặt theo tiêu chuẩn ISO, đảm bảo an toàn tuyệt đối và hiệu quả điều trị tối ưu cho mỗi bệnh nhân.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Footer Info -->
+<footer class="px-6 py-8 pb-32 flex flex-col items-center text-center gap-6 border-t border-gray-200 dark:border-gray-800 bg-background-light dark:bg-background-dark">
+<div class="w-16 h-1 bg-gray-300 dark:bg-gray-700 rounded-full mb-2"></div>
+<div>
+<h3 class="text-slate-900 dark:text-white font-bold text-lg mb-2">Bệnh viện Đa khoa CarePlus</h3>
+<p class="text-slate-500 dark:text-text-secondary text-sm">123 Đường Nguyễn Văn Linh, Quận 7, TP.HCM</p>
+<div class="flex items-center justify-center gap-2 mt-2 text-primary font-bold">
+<span class="material-symbols-outlined text-sm">call</span>
+<span>1900 123 456</span>
+</div>
+</div>
+<p class="text-slate-400 dark:text-gray-500 text-xs italic">
+                "Sức khỏe của bạn là hạnh phúc của chúng tôi"
+            </p>
+<div class="w-full h-px bg-gray-200 dark:bg-gray-800"></div>
+<p class="text-slate-500 dark:text-text-secondary text-xs">
+                Cảm ơn quý khách đã sử dụng WiFi miễn phí của bệnh viện.
+            </p>
+</footer>
+<!-- Sticky CTA Button -->
+<div class="fixed bottom-0 left-0 w-full p-4 bg-gradient-to-t from-background-light via-background-light to-transparent dark:from-background-dark dark:via-background-dark dark:to-transparent z-50 pt-8">
+<button class="w-full bg-primary hover:bg-blue-600 text-white font-bold text-lg py-4 px-6 rounded-full shadow-lg shadow-primary/30 flex items-center justify-center gap-2 transition-all active:scale-[0.98]">
+<span>Tiếp tục truy cập Internet</span>
+<span class="material-symbols-outlined">wifi</span>
+</button>
+</div>
+</div>
+</body></html>
